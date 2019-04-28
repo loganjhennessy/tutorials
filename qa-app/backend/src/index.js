@@ -84,6 +84,8 @@ app.post('/answer/:id', checkJwt, (req, res) => {
         answer,
         author: req.user.name,
     });
+
+  res.status(200).send();
 });
 
 // start the server
